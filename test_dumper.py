@@ -9,7 +9,7 @@ def test_extractMaxPages():
     from dumper import extractMaxPages
     data = fileAsString("video.html")
     maxPagesActual = extractMaxPages(data)
-    maxPagesExpected = 148
+    maxPagesExpected = 147
     assert maxPagesExpected == maxPagesActual
 
 def test_extractPageData():
@@ -23,9 +23,10 @@ def test_extractPageData():
     assert expectedSize == actualSize
 
 def test_extractPageData_containsKey():
-    """parsing page data and checking if resulting data contains url"""
+    """parsing page data and checking if resulting data contains stream->url->title chain"""
     from dumper import extractPageData
     data = fileAsString("video_page_1.html")
     storage = {}
     extractPageData(data,storage)
-    assert "Neonavt" in storage
+    chunkForTest=storage["Neonavt"]["streams"][0]
+    assert "failedStarCraft" in chunkForTest["title"]
