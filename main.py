@@ -4,6 +4,8 @@ from bs4 import BeautifulSoup
 import json
 import codecs
 
+RESULT_FILE="./gg.html"
+
 def grabDataFromPage(urlToGrab,storage):
 	global f
 	r=requests.get(urlToGrab)
@@ -33,7 +35,8 @@ for i in range(1,int(maxPages)+1):
 	print "Grabbing %s page"%i
 	grabDataFromPage(page%i,crawledData)
 
-f=codecs.open("res.html","w+","UTF-8")
+f=codecs.open(RESULT_FILE,"w+","UTF-8")
+f.write('<head><meta charset="UTF-8"></head>')
 
 streamers=crawledData.keys()
 for s in sorted(streamers):
