@@ -29,4 +29,4 @@ def test_extractPageData_containsKey():
     storage = {}
     extractPageData(data,storage)
     chunkForTest=storage["Neonavt"]["streams"][0]
-    assert "failedStarCraft" in chunkForTest["title"]
+    assert "StarCraft" in chunkForTest["title"]
