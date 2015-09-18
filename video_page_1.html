@@ -1,0 +1,1354 @@
+    
+
+<!DOCTYPE html>
+<html ng-app="GG" ng-controller="default">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+		<title></title>
+
+		<meta http-equiv="Content-Language" content="ru">
+		<meta name="generator" content="">
+		<meta name="authors" content="">
+		<meta name="copyright" content="">
+		<meta name="description" http-equiv="description" content="">
+        <meta name="apple-itunes-app" content="app-id=881408020">
+		<meta name="keywords" http-equiv="keywords" content="">
+        <meta name='yandex-verification' content='7750c09b84abf8ec' />
+
+        <link rel="shortcut icon" href="/images/icons/favicon.png" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+        <link rel="alternate" type="application/rss+xml" title="GoodGame" href="http://goodgame.ru/rss/" />
+        <link rel="stylesheet" href="http://goodgame.ru/css/compiled/channels_smiles.css?rgb9e6"/>
+        <link rel="stylesheet" href="http://goodgame.ru/css/compiled/common_smiles.css?rgb9e6"/>
+
+		<link href="//goodgame.ru/css/compiled/style.css?rgb1oj" type="text/css" rel="stylesheet"/>
+<link href="//goodgame.ru/css/jquery.autocomplete.css?qw70lu" type="text/css" rel="stylesheet"/>
+<script src="//goodgame.ru/js/libraries/jquery-1.7.1.min.js?q6tg7m" type="text/javascript"></script>
+<script src="//goodgame.ru/js/libraries/swfobject.js?q6tg7m" type="text/javascript"></script>
+
+        
+        <script>
+            jQuery.cachedScript = function( url, options ) {
+                options = $.extend( options || {}, {
+                    dataType: "script",
+                    cache: true,
+                    url: url
+                });
+                return jQuery.ajax( options );
+            };
+        </script>
+        <script src="/js/libraries/angular.min.js"></script>
+        <script src="/js/libraries/angular-sanitize.min.js"></script>
+        <script src="/js/libraries/angular-route.min.js"></script>
+
+        <script src="/js/libraries/angular-ui-router.min.js"></script>
+
+        <script src="//goodgame.ru/js/minified/angular.js?rgb9ej" type="text/javascript"></script>
+<script src="//goodgame.ru/js/minified/all.js?rgb9ej" type="text/javascript"></script>
+
+		
+		<script>
+			var AJAX_PATH = 'http://goodgame.ru/ajax/';
+			var AJAX_HTTPS_PATH = 'https://goodgame.ru/ajax/';
+			var VIEW_PATH = 'http://goodgame.ru/view/';
+			var WEB = 'http://goodgame.ru/';
+            var CKEDITOR_BASEPATH = WEB + 'js/ckeditor/';
+			var DEV = '';
+
+			var User = '0';
+			var canRate = '1';
+			var Token = '';
+			var NotifySettings = [];
+            var Menu_Fix = '';
+
+            var GGCup = 0;
+
+            window.timeLag = +new Date() - 1442608304000;
+		</script>
+
+        <base href="/video/" target="_self" />
+
+
+
+
+</head>
+
+<body class="black logosposition " style="background:#010000" >
+<div>
+<div id="filter-overflow"></div>
+<a href="#" id="left-click"><div class="icon-angle-top"></div></a>
+
+
+<div id="showframe" style="position:absolute;top:48px;left:0;right:0;height:900px;overflow:hidden;min-width:1150px;">
+    <div id="adouter">
+        <div id="adinner">
+            <iframe src="http://goodgame.ru/b55be4d49e565e" frameborder="0" scrolling="no" width="2050" height="900"></iframe>
+        </div>
+    </div>
+</div>
+
+<div id="head-menu" class="head-menu" style="display: none;"></div>
+<header>
+    <div class="wrap" id="top">
+        <a class="logo" href="http://goodgame.ru/" target="_self">
+            <svg width="19px" height="17px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="UI-kit-GoodGame" sketch:type="MSArtboardGroup" transform="translate(-1098.000000, -1371.000000)" fill="#FFFFFF">
+                        <path d="M1098.72045,1388.20349 L1115.65792,1371.81849 C1116.05582,1371.36645 1116.86392,1371 1117.45833,1371 L1118.54167,1371 C1119.13811,1371 1119.9445,1371.36681 1120.34208,1371.81849 L1137.27955,1388.20349 C1137.67744,1388.65553 1138,1389.51553 1138,1390.11973 L1138,1392.31868 L1098,1392.31868 L1098,1390.11973 C1098,1389.51346 1098.32288,1388.65516 1098.72045,1388.20349 Z M1133.13514,1392.31868 L1133.13514,1410.45102 C1133.13514,1410.75421 1132.89148,1411 1132.59689,1411 L1103.40311,1411 C1103.10585,1411 1102.86486,1410.75004 1102.86486,1410.45102 L1102.86486,1392.31868 L1133.13514,1392.31868 Z M1113.67568,1397.81319 L1122.32432,1397.81319 L1122.32432,1411 L1113.67568,1411 L1113.67568,1397.81319 L1113.67568,1397.81319 Z" id="home"></path>
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <!--<script>replaceSvg('logo'); </script>-->
+        <ul class="menu-links links">
+            <li id="m6"><a href="http://goodgame.ru/channels/" target="_self">Стримы</a></li>
+            <li id="m13"><a href="http://goodgame.ru/video/" target="_self">Видео</a></li>
+            <li id="m17"><a href="http://goodgame.ru/cup/" target="_self">Турниры</a></li>
+            <li id="m2">
+                <a href="http://goodgame.ru/forum/" id="forum-a" target="_self">Форум</a>
+                <ul class="sub-menu forum"></ul>
+            </li>
+
+            <li id="m3"><a href="http://goodgame.ru/event/" target="_self">События</a></li>
+            <li id="m16"><a href="http://goodgame.ru/help/" target="_self">Помощь</a></li>
+        </ul>
+        <div class="search-block">
+            <form action="/search/">
+                <span class="icon icon-search"></span>
+                <input class="search-input" type="text" name="query" autocomplete="off" data-lock="0">
+                <input type="submit" style="display: none">
+            </form>
+            <div id="searchResults" class="sub-menu" style="display: none;"></div>
+        </div>
+        
+<ul class="links top register">
+    <li>
+        <a href="javascript:" rel="reg-popup">Регистрация</a>
+    </li>
+    <li>
+        <a href="javascript:" rel="login-popup">Вход</a>
+    </li>
+</ul>
+<div id="loginMenuContainer" class="mainMenu" style="display: block;"></div>
+<div id="dialog-confirm" style="display:none" title="Вход на сайт"><p></p></div>
+
+    </div>
+</header>
+
+<div id="partners2" style="width: 1093px;">
+    <div class="inner-partners-fig-vam-adblock">
+        <div class="pblock">
+            <a href="/team/12" target="_blank" rel="nofollow">
+                <svg id="rox-logo" src="/images/svg/tornado-rox-2.svg" width="86"></svg>
+            </a>
+
+            <a href="https://vk.com/tornado_energy" target="_blank" rel="nofollow">
+                <svg id="tornado_logo" src="/images/svg/tornado_logo.svg" width="86"></svg>
+            </a>
+
+            <a href="http://www.kaspersky.ru/" target="_blank" rel="nofollow">
+                <svg id="kaspersky-logo" src="/images/svg/kaspersky-logo.svg" width="86"></svg>
+            </a>
+
+            <a href="https://www.g2a.com/r/roxcis" target="_blank" rel="nofollow">
+                <svg id="g2a-logo" src="/images/svg/g2a.svg" width="86"></svg>
+            </a>
+
+            <script>
+                replaceSvg('.inner-partners-fig-vam-adblock');
+            </script>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper">
+    <a class="logo-gg" href="http://goodgame.ru/" target="_self">
+        <svg xmlns="http://www.w3.org/2000/svg" id="logo-gg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" width="238px" height="100px" viewBox="0 0 46 19" version="1.1">
+            <g id="Page-1" stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd" sketch:type="MSPage">
+                <g id="new-navigation-user-+-forum" sketch:type="MSArtboardGroup" transform="translate(-64.000000, -152.000000)" fill="#fff">
+                    <g id="top-bars" sketch:type="MSLayerGroup" transform="translate(-3.000000, 138.000000)">
+                        <g id="nav" sketch:type="MSShapeGroup">
+                            <path d="M100.286077,30.4277485 C100.286077,31.8483479 101.478337,33.0000005 102.94892,33.0000005 C104.419775,33.0000005 105.612035,31.8483479 105.612035,30.4277485 C105.612035,29.0071491 104.419775,27.8554965 102.94892,27.8554965 C101.478337,27.8554965 100.286077,29.0071491 100.286077,30.4277485 Z M109.939109,28.4984281 C108.652292,28.4984281 107.609167,29.5061461 107.609167,30.7491705 C107.609167,31.9921073 108.652292,32.9999129 109.939109,32.9999129 C111.226016,32.9999129 112.269232,31.9921073 112.269232,30.7491705 C112.269232,29.5061461 111.226016,28.4984281 109.939109,28.4984281 L109.939109,28.4984281 Z M88.0177994,26.8624962 C88.0177994,26.8624962 90.8717517,26.8518084 92.6371587,26.8624962 C92.1858571,27.4151072 91.0676663,28.8202005 88.3031946,28.8202005 C85.3653825,28.8202005 82.7056223,26.5704218 82.7056223,23.5147665 C82.7056223,20.2731263 85.3483386,18.1569449 88.364299,18.1583466 C91.3789901,18.1597482 92.8677051,20.1438216 93.2145673,20.8365127 C94.1586925,20.8237224 95.0116144,20.8288035 97.3719273,20.8365127 C97.3720179,18.5025458 93.7392122,14.016129 88.3031946,14.016129 C82.9122347,14.016129 78.4192543,17.9961025 78.4192543,23.3539241 C78.4192543,29.5677322 84.0587112,33.0000005 87.9703846,33.0000005 C90.5378538,33.0000005 93.019922,32.1509348 94.3694752,30.8797892 C94.371651,31.9319228 94.3694752,33.0000005 94.3694752,33.0000005 L97.602927,33.0000005 L97.602927,23.7378959 L88.0177994,23.7378959 L88.0177994,26.8624962 L88.0177994,26.8624962 Z M71.9657682,26.8624962 L74.0444935,26.8624962 L74.0444935,27.755189 C74.0444935,28.7318949 73.2557583,29.5406623 72.0812681,29.5406623 C71.3247169,29.5406623 70.2335425,28.8482341 70.2335425,27.6435805 L70.2335425,21.3944677 C70.2335425,20.2737395 71.005959,19.4955461 72.1084658,19.4955461 C73.2816868,19.4955461 74.0444935,20.2571822 74.0444935,21.2828592 L74.0444935,21.7292056 L76.9315364,21.7292056 L76.9315364,20.1669493 C76.9315364,18.8087245 75.2228821,16.2612647 72.0812681,16.2612647 C69.3076398,16.2611771 67,18.2756494 67,20.9480336 L67,27.8554089 C67,31.2705066 69.8028205,32.7768711 72.325776,32.7768711 C74.9960527,32.7768711 77.1624455,30.4262592 77.1624455,28.6478819 L77.1624455,24.2957633 L71.9657682,24.2957633 L71.9657682,26.8624962 L71.9657682,26.8624962 Z M111.576324,27.1972341 L111.922732,15.7032222 L107.303464,15.7032222 L107.996372,27.1972341 L111.576324,27.1972341 L111.576324,27.1972341 Z M104.64742,26.5276706 L105.340329,14.1409659 L100.374651,14.1409659 L100.951969,26.5276706 L104.64742,26.5276706 L104.64742,26.5276706 Z" id="logo"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </a>
+
+
+    <script>Filter(3)</script>
+
+    
+    <script>menu_onload('1300');</script>
+
+<table style="border-collapse: separate; position: relative; width: 1150px; margin: 0 auto;">
+    
+
+    
+    </table>
+
+
+<div id="content" class="full">
+<div class="content">
+	<div id="content-left">
+        <div class="block-header"><h2>&nbsp;</h2></div>
+
+    <div class="video">
+
+        
+        <div class="content_head">
+            <h1 class="content_title">Видео — записи стримов</h1>
+
+                            <span class="js-filter filter_off" style="width:105px;"></span>
+            
+                            <a href="/video/new/" class="button" onclick="show_login_form(event, videos_callback);">Добавить видео</a>
+            
+            <div class="filter_block">
+                <ul class="filter js-filter-on">
+                    <li><a href="http://goodgame.ru/video/by-date/" class="js-filter ">самые свежие</a></li>
+                    <li><a href="http://goodgame.ru/video/by-rating/" class="js-filter ">лучшие за месяц</a></li>
+                                    </ul>
+            </div>
+        </div>
+
+        <div class="video_list"><div class="video_block" title="Games Tattler News #15: Half-Life 3 и новый Star Craft II ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27457/">
+                <span class="info_block">
+                    <span class="rating green">+1</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>170</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63333_6KMp_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27457/">Games Tattler News #15: Half-Life 3 и новый Star Craft II </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-cs-go" title="cs_go"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/10903/">AsperanT</a></span>
+        </div>
+    </div><div class="video_block" title="GSL RO 8 день 2(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27451/">
+                <span class="info_block">
+                    
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>771</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>1</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63321_Bd5f_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27451/">GSL RO 8 день 2(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="WSVG 2015 Maldives группа  С(Pomi) ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27428/">
+                <span class="info_block">
+                    
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1261</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>1</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63275_58Fc_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27428/">WSVG 2015 Maldives группа  С(Pomi) </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Games Tattler Review: FIFA 16 vs PES 16 ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27423/">
+                <span class="info_block">
+                    <span class="rating green">+2</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>447</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>3</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63265_dkEf_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27423/">Games Tattler Review: FIFA 16 vs PES 16 </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-cs-go" title="cs_go"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/10903/">AsperanT</a></span>
+        </div>
+    </div><div class="video_block" title="WSVG 2015 Maldives группа A(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27422/">
+                <span class="info_block">
+                    <span class="rating green">+3</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>844</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>1</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63263_IZrY_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27422/">WSVG 2015 Maldives группа A(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Trine 3 (Boni, BSP, Dian) Best moments [1]">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27400/">
+                <span class="info_block">
+                    <span class="rating green">+56</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>2369</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>12</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63219_JCdo_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27400/">Trine 3 (Boni, BSP, Dian) Best moments [1]</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="Bonivur на Opergamer: Dispatcher [третья попытка] ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27395/">
+                <span class="info_block">
+                    <span class="rating green">+14</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1109</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>3</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63209_eh4H_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27395/">Bonivur на Opergamer: Dispatcher [третья попытка] </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="Пролига Финал+WCS Финалы+Трейлер Lotv(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27367/">
+                <span class="info_block">
+                    <span class="rating green">+10</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>3755</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63153_wTxZ_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27367/">Пролига Финал+WCS Финалы+Трейлер Lotv(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Вступительный ролик StarCraft II: Legacy of the Void">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27366/">
+                <span class="info_block">
+                    <span class="rating green">+36</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>3902</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>42</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63151_Sa8c_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27366/">Вступительный ролик StarCraft II: Legacy of the Void</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-hots" title="Heroes of the Storm"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/74970/">Neonavt</a></span>
+        </div>
+    </div><div class="video_block" title="WCS 1/4(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27353/">
+                <span class="info_block">
+                    <span class="rating green">+8</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>2205</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>1</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63125_Fqe8_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27353/">WCS 1/4(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="CODE S RO 16 группа D(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27324/">
+                <span class="info_block">
+                    <span class="rating green">+3</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>2378</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63067_Wd4U_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27324/">CODE S RO 16 группа D(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Games Tattler News #14: Монополия + Fallout и сюжетная Minecraft ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27320/">
+                <span class="info_block">
+                    
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>786</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63059_E8UD_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27320/">Games Tattler News #14: Монополия + Fallout и сюжетная Minecraft </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-cs-go" title="cs_go"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/10903/">AsperanT</a></span>
+        </div>
+    </div><div class="video_block" title="На Белогорье знают, что такое киберспорт">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27309/">
+                <span class="info_block">
+                    <span class="rating green">+24</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1497</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>11</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63037_gYj2_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27309/">На Белогорье знают, что такое киберспорт</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-terran" title="Terran"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/3/">nefanda</a></span>
+        </div>
+    </div><div class="video_block" title="Agent (quakelive movie)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27303/">
+                <span class="info_block">
+                    <span class="rating green">+12</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>960</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>5</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_63025_YPWe_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27303/">Agent (quakelive movie)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-quake" title="Quake"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/3560/">zubich</a></span>
+        </div>
+    </div><div class="video_block" title="WCS 2й день + GSL 2 матча(Pomi) ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27288/">
+                <span class="info_block">
+                    <span class="rating green">+2</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1881</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62995_y0mC_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27288/">WCS 2й день + GSL 2 матча(Pomi) </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Best of Bonivur [RE2 последняя часть за Клару]">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27287/">
+                <span class="info_block">
+                    <span class="rating green">+11</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>778</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>2</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62993_37ZV_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27287/">Best of Bonivur [RE2 последняя часть за Клару]</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="Resident Evil 2 c Бонивуром: кампания за Клару [3] ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27286/">
+                <span class="info_block">
+                    <span class="rating green">+15</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>931</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>2</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62991_aHVg_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27286/">Resident Evil 2 c Бонивуром: кампания за Клару [3] </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="TheAnnihilyator | FV215B - 9550 DMG. VOD № 6 от Tornado ROX.">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27282/">
+                <span class="info_block">
+                    <span class="rating">-10</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>608</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>3</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62983_McRN_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27282/">TheAnnihilyator | FV215B - 9550 DMG. VOD № 6 от Tornado ROX.</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-hots" title="Heroes of the Storm"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/74970/">Neonavt</a></span>
+        </div>
+    </div><div class="video_block" title="WCS Ro16 группа А(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27270/">
+                <span class="info_block">
+                    <span class="rating green">+1</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1614</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62959_j3Jd_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27270/">WCS Ro16 группа А(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Самая развратная сборная GG по Лиге Легенд">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27266/">
+                <span class="info_block">
+                    <span class="rating green">+20</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1555</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>4</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62951_uexj_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27266/">Самая развратная сборная GG по Лиге Легенд</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="Metal Gear Solid V: The Phantom Pain // ИГРОПРОМ. Выпуск №88">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27265/">
+                <span class="info_block">
+                    <span class="rating green">+4</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1145</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>3</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62949_kfzW_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27265/">Metal Gear Solid V: The Phantom Pain // ИГРОПРОМ. Выпуск №88</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-cs-go" title="cs_go"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/10903/">AsperanT</a></span>
+        </div>
+    </div><div class="video_block" title="Худшие целители-шарлатаны России [вне конкурса]">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27263/">
+                <span class="info_block">
+                    <span class="rating green">+6</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1915</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>10</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62945_yzJx_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27263/">Худшие целители-шарлатаны России [вне конкурса]</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="KT vs CJ - playoffs(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27254/">
+                <span class="info_block">
+                    <span class="rating green">+6</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1082</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62927_lui1_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27254/">KT vs CJ - playoffs(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Bonivur на Opergamer: Dispatcher [вторая попытка]">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27252/">
+                <span class="info_block">
+                    <span class="rating green">+6</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>764</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>1</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62923_cEtW_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27252/">Bonivur на Opergamer: Dispatcher [вторая попытка]</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="KT vs SBENU - playoffs(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27227/">
+                <span class="info_block">
+                    <span class="rating green">+5</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1692</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>2</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62873_2LrB_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27227/">KT vs SBENU - playoffs(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="RSTL Solo группа C(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27207/">
+                <span class="info_block">
+                    <span class="rating green">+1</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1489</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>2</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62833_z46e_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27207/">RSTL Solo группа C(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Games Tattler News #13: Deus Ex: Mankind Divided и киберспортивная Россия ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27199/">
+                <span class="info_block">
+                    <span class="rating">-2</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>633</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>3</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62817_6PRE_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27199/">Games Tattler News #13: Deus Ex: Mankind Divided и киберспортивная Россия </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-cs-go" title="cs_go"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/10903/">AsperanT</a></span>
+        </div>
+    </div><div class="video_block" title="Until Dawn S1E03 by Mantich">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27184/">
+                <span class="info_block">
+                    <span class="rating green">+24</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>2567</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>21</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62787_Sw1R_preview.png" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27184/">Until Dawn S1E03 by Mantich</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-chat-gg" title="gg"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/68568/">Mantich</a></span>
+        </div>
+    </div><div class="video_block" title="League of Legends c Крабом [4.09.15] - сумасшедшие дуо">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27179/">
+                <span class="info_block">
+                    <span class="rating green">+5</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1012</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>6</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62777_vRjm_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27179/">League of Legends c Крабом [4.09.15] - сумасшедшие дуо</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="RSTL Solo группа B(Pomi) ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27176/">
+                <span class="info_block">
+                    <span class="rating green">+3</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1216</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62771_9pgm_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27176/">RSTL Solo группа B(Pomi) </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="EXTRO (quakelive movie)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27164/">
+                <span class="info_block">
+                    <span class="rating green">+9</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>950</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>10</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62747_jfQX_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27164/">EXTRO (quakelive movie)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-quake" title="Quake"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/3560/">zubich</a></span>
+        </div>
+    </div><div class="video_block" title="The Hydralisk at Otakuthon 2015 ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27163/">
+                <span class="info_block">
+                    <span class="rating green">+16</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1472</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>7</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62745_NydG_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27163/">The Hydralisk at Otakuthon 2015 </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-cs-go" title="cs_go"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/10903/">AsperanT</a></span>
+        </div>
+    </div><div class="video_block" title="RSTL Solo группа А(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27148/">
+                <span class="info_block">
+                    <span class="rating green">+3</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>811</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>1</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62715_vRqf_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27148/">RSTL Solo группа А(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="CSC vs Millenium - Final(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27147/">
+                <span class="info_block">
+                    
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>710</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62713_zVzB_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27147/">CSC vs Millenium - Final(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="ByuL vs TY(SSL 1/2) - Pomi">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27133/">
+                <span class="info_block">
+                    
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1634</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>3</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62685_EMwj_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27133/">ByuL vs TY(SSL 1/2) - Pomi</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Resident Evil 2 c Бонивуром: кампания за Клару [2] ">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27126/">
+                <span class="info_block">
+                    <span class="rating green">+17</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1367</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>5</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62671_KffH_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27126/">Resident Evil 2 c Бонивуром: кампания за Клару [2] </a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="Code S RO 16 группа А(Pomi)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27108/">
+                <span class="info_block">
+                    <span class="rating green">+3</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>2383</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62635_lHZL_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27108/">Code S RO 16 группа А(Pomi)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-sc2-protoss" title="Protoss"></span><a class="ct" href="http://goodgame.ru/team/12/">TORNADO ROX.</a><a href="http://goodgame.ru/user/374/">Pomi</a></span>
+        </div>
+    </div><div class="video_block" title="Regionals Finals EU/NA">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27093/">
+                <span class="info_block">
+                    <span class="rating green">+14</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1378</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>0</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62605_zRzQ_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27093/">Regionals Finals EU/NA</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-lv" title="Латвия"></span><span class="gameicon smiles vivi1"></span><a class="ct" href="http://goodgame.ru/team/1290/">LvTM.</a><a href="http://goodgame.ru/user/777/">Vivi</a></span>
+        </div>
+    </div><div class="video_block" title="Bonivur на Opergamer: Dispatcher">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27086/">
+                <span class="info_block">
+                    <span class="rating green">+18</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>2267</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>6</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62591_0Vmq_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27086/">Bonivur на Opergamer: Dispatcher</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-ru" title="Россия"></span><span class="gameicon gameicon-lol" title="League of Legends"></span><a class="ct" href="http://goodgame.ru/team/1/">GG.</a><a href="http://goodgame.ru/user/30/">bonivur</a></span>
+        </div>
+    </div><div class="video_block" title="Regionals EU/NA 1/2 (обе игры 3-2)">
+        <div class="video_item">
+            <a href="http://goodgame.ru/video/27072/">
+                <span class="info_block">
+                    <span class="rating green">+8</span>
+                    <span class="stats">
+                        <span class="comments">
+                            <span class="icon icon-eye"></span><span>1039</span>
+                        </span>
+                        <span class="comments">
+                            <span class="icon icon-bubble"></span><span>7</span>
+                        </span>
+                    </span>
+                </span>
+                <img src="http://goodgame.ru/files/logotypes/fl_62563_pW7z_preview.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="title">
+            <a href="http://goodgame.ru/video/27072/">Regionals EU/NA 1/2 (обе игры 3-2)</a>
+        </div>
+        <div class="video_autor">
+            <span class="sign"><span class="flag flag-lv" title="Латвия"></span><span class="gameicon smiles vivi1"></span><a class="ct" href="http://goodgame.ru/team/1290/">LvTM.</a><a href="http://goodgame.ru/user/777/">Vivi</a></span>
+        </div>
+    </div></div>
+
+        <div class="clear"></div>
+
+        <div class="" id="navigation"><ol class="nav"><li><b href="page/1/">1</b></li><li><a href="page/2/">2</a></li><li><a href="page/3/">3</a></li><li><i>...</i></li><li><a href="page/146/">146</a></li><li><a href="page/147/">147</a></li></ol></div><script>$('#content-left').navigation3();</script>
+    </div>
+
+    </div>
+
+
+ 
+
+
+
+ 
+</div>
+</div>
+
+<!--noindex-->
+<div id="footer-top"><div class="content">
+	<a href="https://docs.google.com/presentation/d/1zJNgvtfV9kEF1Ylzb0TNsK963WveNa-bOumQDgGaA7c/pub?start=false&loop=false&delayms=3000" target="_blank" rel="nofollow">Реклама</a>
+    <a href="http://goodgame.ru/stats/" rel="nofollow">Статистика сайта</a>
+	<a href="https://docs.google.com/presentation/d/1sX12Xb5Vk533jRpo3wkbFw-uEGnXmmQgvqFGoTJWI9c/present#slide=id.p" target="_blank" rel="nofollow">О сайте</a>
+    <a href="http://goodgame.ru/help/" target="_self" rel="nofollow">Помощь</a>
+    <a href="https://docs.google.com/document/pub?id=1Sl-o_WZW8gmOi3132ByLqWOE2Ny-38QxyierEd0VxIY" target="_blank" rel="nofollow">Пользовательское соглашение</a>
+</div></div>
+
+<img width="1" src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=1&ad=529295&bt=21&pid=2037792&bid=3916419&bn=3916419&rnd=1810999288" style="visibility: hidden; position: absolute;">
+
+	<div id="footer-bottom"><div class="content">
+		<ul>
+			<li>
+				<p>&copy; 2007 – <b style="font-size: 16px;">&infin;</b> ООО «Мидиан»</p>
+				<p>Свидетельство о регистрации СМИ Эл No ФС77-32290</p>
+                <p>Запрещено для детей. 18+</p>
+			</li>
+
+			<li>
+                Коллеги, если вы используете материалы с нашего сайта,
+                будьте добры указывать в качестве источника GoodGame.ru. Спасибо.
+            </li>
+
+            <li>
+                Дизайн, разработка и техническая поддержка ресурса:<br>
+                <a href="mailto:support@goodgame.ru">GoodGame Dev Group</a><br />
+		    </li>
+
+
+            <li>
+                При оплате банковской картой ввод реквизитов карты происходит в системе электронных платежей
+                ОАО АКБ «Авангард», которая прошла сертификацию в платежных системах Visa и MasterCard.
+                Представленные вами данные полностью защищены.
+            </li>
+
+            <li style="width:750px;margin-right:-10px;">
+                <img src="/images/creditcards.png">
+
+                <a style="margin: 15px;" href="http://www.megastock.ru/" target="_blank" rel="nofollow"><img src="/images/acc_blue_on_transp_ru.png" alt="www.megastock.ru" border="0"/></a>
+                <a href="https://passport.webmoney.ru/asp/certview.asp?wmid=352743408907" target="_blank"><img src="/images/v_blue_on_transp_ru.png" alt="Здесь находится аттестат нашего WM идентификатора 352743408907" border="0" rel="nofollow" /></a>
+
+
+                <div id="strmwll">Защита сайта от DDoS-атак &mdash; <a href="https://stormwall.pro/" target="_blank" rel="nofollow">StormWall</a></div>
+            </li>
+        </ul>
+
+    <div id="footer-dev"><script>document.write(DEV);</script></div>
+
+                <!--LiveInternet counter-->
+<script type="text/javascript"><!--
+            new Image().src = "//counter.yadro.ru/hit?r"+
+            escape(document.referrer.replace('beta.goodgame.ru', 'goodgame.ru'))+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+            ";"+Math.random();//-->
+</script>
+<!--/LiveInternet-->
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter11385799 = new Ya.Metrika({
+                    id:11385799,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/11385799" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<!-- google -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3668187-1']);
+  _gaq.push(['_setDomainName', 'goodgame.ru']);
+  _gaq.push(['_trackPageview']);
+
+(function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- /google -->
+
+<!-- tns-counter.ru -->
+<script type="text/javascript">
+	(function(win, doc, cb){
+		(win[cb] = win[cb] || []).push(function() {
+			try {
+				tnsCounterGoodgame_ru = new TNS.TnsCounter({
+				'account':'goodgame_ru',
+				'tmsec': 'goodgame_total'
+				});
+			} catch(e){}
+		});
+
+		var tnsscript = doc.createElement('script');
+		tnsscript.type = 'text/javascript';
+		tnsscript.async = true;
+		tnsscript.src = ('https:' == doc.location.protocol ? 'https:' : 'http:') +
+			'//www.tns-counter.ru/tcounter.js';
+		var s = doc.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(tnsscript, s);
+	})(window, this.document,'tnscounter_callback');
+</script>
+<noscript>
+	<img src="//www.tns-counter.ru/V13a****goodgame_ru/ru/UTF-8/tmsec=goodgame_total/" width="0" height="0" alt="" />
+</noscript>
+<!--/ tns-counter.ru -->
+
+<!-- Begin comScore Tag -->
+<script>
+    var _comscore = _comscore || [];
+    _comscore.push({ c1: "2", c2: "16558621" });
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+    })();
+</script>
+<noscript>
+    <img src="http://b.scorecardresearch.com/p?c1=2&c2=16558621&cv=2.0&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+
+	</div>
+
+            
+        </div>
+</div>
+
+<!--/noindex-->
+
+<ul id="notifySystem">
+
+</ul>
+
+    <div id="fb-root"></div>
+    <div id="vk_api_transport"></div>
+
+
+    <script src="//vkontakte.ru/js/api/openapi.js"></script>
+    <script>
+        $(function() {
+
+            window.fbAsyncInit = function() { FB.init({appId: '410609439070133', xfbml: true, cookie: true, oauth: true}); };
+            window.vkAsyncInit = function() { VK.init({apiId: '2903428'}); };
+
+
+            (function() {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+            }());
+
+            (function() {
+                var e = document.createElement('script'); e.async = true;
+                e.src = document.location.protocol + '//vk.com/js/api/openapi.js';
+                document.getElementById('vk_api_transport').appendChild(e);
+            }());
+
+        });
+
+    </script>
+
+
+<script>
+    $.cachedScript('/js/libraries/jquery.mousewheel.js');
+    $.cachedScript('/js/libraries/jquery-ui.min.js');
+    $.cachedScript('/js/libraries/TweenMax.min.js');
+</script>
+
+
+
+<script>
+    init();
+</script>
+
+</body>
+</html>
